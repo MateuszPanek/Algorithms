@@ -56,6 +56,7 @@ assert result == [8,6,4,5,7], "Wrong outcome!"
 assert result2 == [28,26,19,17,16,17,19,21,28,30], "Wrong outcome!"
 
 """
+
 SIMPLEST SOLUTION
 
 def pendulum1(a):
