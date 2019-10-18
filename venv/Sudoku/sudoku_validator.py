@@ -1,7 +1,7 @@
 from math import sqrt
 
 
-class Sudoku(object):
+class SudokuValidator(object):
     def __init__(self, data):
         self.data = data
         self.size = len(self.data)
@@ -84,7 +84,7 @@ class Sudoku(object):
 
 
 
-goodSudoku1 = Sudoku([
+goodSudoku1 = SudokuValidator([
     [7, 8, 4, 1, 5, 9, 3, 2, 6],
     [5, 3, 9, 6, 7, 2, 8, 4, 1],
     [6, 1, 2, 4, 3, 8, 7, 5, 9],
@@ -98,7 +98,7 @@ goodSudoku1 = Sudoku([
     [1, 9, 5, 2, 8, 7, 6, 3, 4]
 ])
 
-goodSudoku2 = Sudoku([
+goodSudoku2 = SudokuValidator([
     [1, 4, 2, 3],
     [3, 2, 4, 1],
 
@@ -106,7 +106,7 @@ goodSudoku2 = Sudoku([
     [2, 3, 1, 4]
 ])
 
-badSudoku1 = Sudoku([
+badSudoku1 = SudokuValidator([
     [0, 2, 3, 4, 5, 6, 7, 8, 9],
     [1, 2, 3, 4, 5, 6, 7, 8, 9],
     [1, 2, 3, 4, 5, 6, 7, 8, 9],
