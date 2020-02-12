@@ -120,3 +120,9 @@ def row_sum_odd_numbers(n):
 def row_sum_odd_numbers1(n):
     return n**3
 
+def borrow(x):
+    """Returns joined string with removed non-alphabetic character"""
+    return ''.join([char for char in x if char.isalpha()]).lower()
+
+borrow_lambda = lambda x: ''.join([char for char in x if char.isalpha()]).lower()
+
